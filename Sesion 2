@@ -1,0 +1,59 @@
+//Ejercicio 1, sesion 2
+
+Console.WriteLine("Introduce tu Nombre");
+string Nombre = Console.ReadLine();
+Console.WriteLine("Ahora dinos tu Apellido");
+string Apellido = Console.ReadLine();
+Console.WriteLine("cual es tu edad?");
+int Edad = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Sabes programar? (si-no)");
+string Programar = Console.ReadLine();
+
+Console.WriteLine("Tu Nombre es " + Nombre + " " + Apellido+ ".");
+Console.WriteLine("Tienes " + Edad +" años, y " + Programar + " sabes programar");
+
+//Ejercicio 2, sesion 2
+
+Console.WriteLine("Tenemos un Coche frente a ti, imaginalo...");
+Console.WriteLine("Cuantas puertas tiene?");
+int puertas = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Con cuantas ruedas lo imaginas??");
+int ruedas = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Cual seria su Marca?");
+string marca = Console.ReadLine();
+Console.WriteLine("Tiene ITV vigente?");
+string ITV = Console.ReadLine();
+Console.WriteLine("Imaginas un coche con " + puertas + " Puertas y " + ruedas + " ruedas.");
+Console.WriteLine("La marca de tu coche es " + marca + ", y " + ITV + " cuenta con ITV incorporado." + Environment.NewLine);
+
+Console.WriteLine("Determinemos las caracteristicas de la mesa de tu casa");
+Console.WriteLine("Cuanto crees que pesa tu mesa? (en Kg)");
+float peso = Convert.ToSingle(Console.ReadLine());
+Console.WriteLine("Cuanto tiene de largo tu mesa? (en Cms)");
+float largo = Convert.ToSingle(Console.ReadLine());
+Console.WriteLine("Cuanto tiene de ancho tu mesa? (en Cms)");
+float ancho = Convert.ToSingle(Console.ReadLine());
+Console.WriteLine("De qué material está hecha?");
+string material = Console.ReadLine();
+Console.WriteLine("y cual es su color?");
+string color = Console.ReadLine();
+
+Console.WriteLine(Environment.NewLine + "La mesa de tu casa tiene las siguientes caracteristicas:");
+Console.WriteLine("Peso = " + peso + " Kg");
+Console.WriteLine("Dimensiones = " + largo + " x " + ancho + " cms");
+Console.WriteLine("Material construido = " + material);
+Console.WriteLine("Color = "+ color + Environment.NewLine);
+
+//Ejercicio 3, sesion 2
+Console.WriteLine("Ingresa un numero");
+int numero = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("El numero es mayor a 18? = " + (numero > 18)+ Environment.NewLine);
+Console.WriteLine("Escribe una vocal");
+char vocal = Convert.ToChar(Console.ReadLine());
+Console.WriteLine("Es la vocal A? = " + (vocal=='a') + Environment.NewLine);
+Console.WriteLine("Ingresa un numero");
+int numero2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("el numero es mayor a 12 y menor a 18? = " +(numero2>12 && numero2<18) + Environment.NewLine);
+Console.WriteLine("Ingresa un numero");
+int numero3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("el numero es 7 o 10? = " + (numero3 == 7 || numero3 == 10));

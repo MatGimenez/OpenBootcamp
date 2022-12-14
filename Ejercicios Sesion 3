@@ -1,0 +1,29 @@
+var PrimerCliente = new Cliente("APS", 225544, "Las Palmas 223", "dale@dale.cl", true);
+var SegundoCliente = new Cliente("IGNEATECH", 939136384, "Cerro Polanco 17268, San Bernardo", "administracion@igneatech.cl", false);
+Console.WriteLine(PrimerCliente);
+Console.WriteLine(Environment.NewLine);
+Console.WriteLine(SegundoCliente);
+
+public struct Cliente
+{
+    public Cliente(string Nombre, int Telefono, string Direccion, string Email, bool NuevoCliente)
+    {
+        //Donde:
+        Nombre_Cliente = Nombre;
+        Telefono_Cliente = Telefono;
+        Direccion_Cliente = Direccion;
+        Email_Cliente = Email;
+        Es_Nuevo_Cliente = NuevoCliente;
+    }
+
+    public string Nombre_Cliente { get; set; }
+    public int Telefono_Cliente { get; set; }
+    public string Direccion_Cliente { get; set; }
+    public string Email_Cliente { get; set; }
+    public bool Es_Nuevo_Cliente { get; set; }
+
+    public override string ToString() => $"{Nombre_Cliente + Environment.NewLine}{Telefono_Cliente + Environment.NewLine}" +
+                                         $"{Direccion_Cliente + Environment.NewLine}{Email_Cliente + Environment.NewLine}" +
+                                         $"{Es_Nuevo_Cliente}";
+
+}

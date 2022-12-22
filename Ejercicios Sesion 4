@@ -1,0 +1,74 @@
+//EJERCIO 1, SESION 4
+using System.ComponentModel.DataAnnotations;
+
+void Ejercicio_1()
+{
+    int i = 1;
+    while (i <= 10)
+    {
+        Console.WriteLine($"1 x {i} = " + i);
+        i++;
+    }
+}
+
+//EJERCIO 2, SESION 4
+void Ejercicio_2()
+{
+    int Numero_Cliente = 0;
+    int contador = 0;
+    do
+    {
+        Console.WriteLine("Escriba un numero POSITIVO (+) o NEGATIVO (-)");
+        Numero_Cliente = Convert.ToInt32(Console.ReadLine());
+        if (Numero_Cliente > 0)
+        {
+            Console.WriteLine("El numero es Positivo");
+            contador = contador + Numero_Cliente;
+            Console.WriteLine($"Contador = {contador}");
+        }
+        else
+        {
+                Console.WriteLine("El numero es Negativo");
+                contador = contador + Numero_Cliente;
+                Console.WriteLine($"Contador = {contador}");
+        }
+    }
+    while (contador != 0);
+
+    Console.WriteLine($"Contador DESHABILITADO");
+}
+
+//EJERCIO 3, SESION 4
+void Ejercicio_3()
+{
+    int Ancho;
+    int Alto;
+    bool Relleno = false;
+
+    Console.WriteLine("Ingrese Ancho");
+    Ancho = Convert.ToInt32(Console.ReadLine);
+    Console.WriteLine("Ingrese Alto");
+    Alto = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
+
+    if (Relleno == true)
+    {
+        for (int j = 0; j < Alto; j++)
+        {
+
+            for (int i = 0; i < Ancho; i++)
+            {
+                Console.Write("* ");
+            }
+            Console.WriteLine("");
+        }
+    }
+    else
+    {
+        Console.WriteLine("error");
+    }
+}
+
+Ejercicio_1();
+Ejercicio_2();
+Ejercicio_3();

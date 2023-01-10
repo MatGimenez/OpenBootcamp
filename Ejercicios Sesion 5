@@ -1,0 +1,63 @@
+// Ejercicio 1 - Sesión 5.
+
+Console.WriteLine("Ingrese su Nombre");
+string Nombre = Console.ReadLine();
+Console.WriteLine("Ingrese su email");
+string Email = Console.ReadLine();
+Console.WriteLine("Tiene Cupon de Descuento?? si / no");
+
+//achicamos la letra con ToLower
+string Respuesta = Console.ReadLine().ToLower();
+bool Cupon;
+
+if (Respuesta == "si")
+{
+    Cupon = true;
+}
+
+else
+{
+    Cupon = false;
+}
+float Ticket = 1400f;
+float Descuento = 0.2f;
+
+
+if (Cupon == true)
+{
+    Console.WriteLine(Environment.NewLine + "Tu nombre es: " + Nombre);
+    Console.WriteLine("Tu email es: " + Email);
+    Console.WriteLine("Tienes un descuento del 20% en tu TICKET: " + (Ticket - (Ticket * Descuento)) + " pesos");
+}
+
+else
+{
+    Console.WriteLine(Environment.NewLine + "Tu nombre es:" + Nombre);
+    Console.WriteLine("Tu email es:" + Email);
+    Console.WriteLine("El total de tu TICKET es de: " + Ticket + " pesos");
+}
+
+// Ejercicio 2 - Sesión 5.
+
+Console.WriteLine("Escoja Un lenguaje de Programación");
+Console.WriteLine("1.- C#" + Environment.NewLine + "2.- Java" + Environment.NewLine + "3.- PHP");
+int Numero_Lenguaje = Convert.ToInt16(Console.ReadLine());
+Console.Write(Environment.NewLine);
+
+switch (Numero_Lenguaje)
+{
+    case 1:
+        Console.WriteLine("Has escogido C#, Excelente!!");
+        break;
+
+    case 2:
+        Console.WriteLine("Has elegido Java, muy bien!!!");
+        break;
+
+    case 3:
+        Console.WriteLine("Has querido adentrarte en el mundo de PHP, super!!!");
+        break;
+
+    default: Console.WriteLine("Ups!, parece que no has elegido ninguno. Lamentamos no tener Lenguajes de Programación que te interesen. Vuelve Pronto :D");
+        break;
+}
